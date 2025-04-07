@@ -1,0 +1,14 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "18"
+
+# Site ID: d897ffed-954e-4aa9-82a8-a34cbbb0abdf
+# Site Name: gheranda
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
