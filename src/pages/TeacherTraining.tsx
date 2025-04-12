@@ -173,13 +173,13 @@ export const TeacherTraining = () => {
                 <div className="space-y-2 text-gray-700">
                   <div className="mb-4">
                     <p className="font-medium">Andalusia, Spain</p>
-                    <p>Suggested donation: €1199 - triple shared room (if registered 3 months in advance)</p>
-                    <p>Regular suggested donation: €1499</p>
+                    <p>Suggested donation: €1299 - triple shared room (if registered 3 months in advance)</p>
+                    <p>Regular suggested donation: €1599</p>
                   </div>
                   <div className="mb-4">
                     <p className="font-medium">Auroville, India</p>
-                    <p>Suggested donation: €899 - shared room (if registered 3 months in advance)</p>
-                    <p>Regular suggested donation: €1199</p>
+                    <p>Suggested donation: €999 - shared room (if registered 3 months in advance)</p>
+                    <p>Regular suggested donation: €1299</p>
                   </div>
                   <p>€300 deposit to hold your spot (limited spots)</p>
                   <br></br>
