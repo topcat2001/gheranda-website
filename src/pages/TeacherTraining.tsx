@@ -175,20 +175,17 @@ export const TeacherTraining = () => {
                     <p className="font-medium">Andalusia, Spain</p>
                     <p>Suggested donation: €1299 - triple shared room (if registered 2 months in advance)</p>
                     <p>Regular suggested donation: €1599</p>
+                    <p>Separate bedroom (shared bathroom): €1699 early / €1999 regular</p>
+                    <p>Private room for couple: US$2,499 (if registered 2 months in advance) / US$2,999 regular</p>
                   </div>
                   <div className="mb-4">
                     <p className="font-medium">Auroville, India</p>
                     <p>Suggested donation: €999 - shared room (if registered 2 months in advance)</p>
                     <p>Regular suggested donation: €1299</p>
-                  </div>
-                  <div className="mb-4">
-                    <p className="font-medium">Private Room for couple</p>
-                    <p>US$2,499 (if registered 2 months in advance)</p>
-                    <p>Regular price: US$2,999</p>
+                    <p>Separate bedroom (shared bathroom): €1399 early / €1699 regular</p>
                   </div>
                   <p>€300 deposit to hold your spot (limited spots)</p>
                   <br></br>
-                  <p>+€400 for separate rooms</p>
                   <p className="text-sm italic mt-4">
                     *Price includes training, manual, accommodation and most meals. 
                     Does not include airfare to training location.
