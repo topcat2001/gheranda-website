@@ -54,22 +54,22 @@ export const Testimonials = () => {
   return (
     <div className="min-h-screen pt-8">
       <div className="max-w-7xl mx-auto px-4">
-        <div className="relative group min-h-[600px] mb-16">
-          {testimonials.map((testimonial, index) => (
-            <div
-              key={index}
-              className={`absolute w-full transition-all duration-1000 ${
-                index === currentSlide 
-                  ? 'opacity-100 translate-x-0' 
-                  : 'opacity-0 translate-x-8'
-              }`}
-            >
-              <div className="grid md:grid-cols-2 gap-12">
+        <div className="grid md:grid-cols-5 gap-8">
+          <div className="md:col-span-3 relative group min-h-[500px] flex items-center">
+            {testimonials.map((testimonial, index) => (
+              <div
+                key={index}
+                className={`absolute w-full transition-all duration-1000 ${
+                  index === currentSlide 
+                    ? 'opacity-100 translate-x-0' 
+                    : 'opacity-0 translate-x-8'
+                }`}
+              >
                 <div className="relative bg-white/80 p-8 rounded-lg">
                   <div className="absolute -top-4 -left-4 text-yellow-600">
                     <Quote className="h-12 w-12" />
                   </div>
-                  <blockquote className="pt-12 text-2xl md:text-3xl font-serif text-gray-700 italic mb-8">
+                  <blockquote className="pt-12 text-xl md:text-2xl font-serif text-gray-700 italic mb-8">
                     {testimonial.quote}
                   </blockquote>
                   <div className="text-yellow-600">
@@ -77,45 +77,54 @@ export const Testimonials = () => {
                     <p className="text-sm text-yellow-600/70">{testimonial.location}</p>
                   </div>
                 </div>
-                <div className="relative h-[400px] md:h-[500px]">
-                  <img
-                    src={testimonial.image}
-                    alt={`Yoga tour with ${testimonial.author}`}
-                    className="w-full h-full object-cover rounded-lg"
-                  />
-                </div>
               </div>
-            </div>
-          ))}
-
-          <button
-            onClick={prevSlide}
-            className="absolute -left-8 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-3 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"
-            aria-label="Previous testimonial"
-          >
-            <ChevronLeft className="h-6 w-6" />
-          </button>
-          <button
-            onClick={nextSlide}
-            className="absolute -right-8 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-3 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"
-            aria-label="Next testimonial"
-          >
-            <ChevronRight className="h-6 w-6" />
-          </button>
-
-          <div className="absolute -bottom-12 left-1/2 -translate-x-1/2 flex space-x-3">
-            {testimonials.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => goToSlide(index)}
-                className={`w-2 h-2 rounded-full transition-all ${
-                  index === currentSlide
-                    ? 'bg-yellow-600 w-8'
-                    : 'bg-yellow-600/30 hover:bg-yellow-600/50'
-                }`}
-                aria-label={`Go to testimonial ${index + 1}`}
-              />
             ))}
+
+            <button
+              onClick={prevSlide}
+              className="absolute -left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-3 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"
+              aria-label="Previous testimonial"
+            >
+              <ChevronLeft className="h-6 w-6" />
+            </button>
+            <button
+              onClick={nextSlide}
+              className="absolute -right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-3 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"
+              aria-label="Next testimonial"
+            >
+              <ChevronRight className="h-6 w-6" />
+            </button>
+
+            <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 flex space-x-3">
+              {testimonials.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => goToSlide(index)}
+                  className={`w-2 h-2 rounded-full transition-all ${
+                    index === currentSlide
+                      ? 'bg-yellow-600 w-8'
+                      : 'bg-yellow-600/30 hover:bg-yellow-600/50'
+                  }`}
+                  aria-label={`Go to testimonial ${index + 1}`}
+                />
+              ))}
+            </div>
+          </div>
+
+          <div className="md:col-span-2 space-y-4">
+            <h2 className="text-xl font-serif text-yellow-600 text-center">Video Testimonials</h2>
+            <iframe
+              src="https://www.instagram.com/p/DSCjftlCA03/embed/"
+              className="w-full h-[280px] border-none rounded-lg"
+              allowFullScreen
+              title="Instagram video testimonial 1"
+            />
+            <iframe
+              src="https://www.instagram.com/p/DcU-HeCohSE/embed/"
+              className="w-full h-[280px] border-none rounded-lg"
+              allowFullScreen
+              title="Instagram video testimonial 2"
+            />
           </div>
         </div>
       </div>

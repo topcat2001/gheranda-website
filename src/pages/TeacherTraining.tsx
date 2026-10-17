@@ -15,7 +15,7 @@ export const TeacherTraining = () => {
     email: '',
     yearsOfPractice: '',
     comments: '',
-    program: 'spain-2025'
+    program: 'auroville'
   });
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -43,7 +43,7 @@ export const TeacherTraining = () => {
           email: '',
           yearsOfPractice: '',
           comments: '',
-          program: 'spain-2025'
+          program: 'auroville'
         });
       } else {
         throw new Error('Failed to submit application');
@@ -134,14 +134,19 @@ export const TeacherTraining = () => {
                 </h3>
                 <div className="space-y-4 text-gray-700">
                   <div>
-                    <p className="font-medium">Summer 2025 - Andalusia, Spain</p>
-                    <p>August 29 - September 18, 2025</p>
-                    <p className="text-sm text-gray-600 mt-1">Practice in the heart of historic Andalusia</p>
+                    <p className="font-medium">Winter - Auroville, India</p>
+                    <p>Feb 1 - Feb 21</p>
+                    <p className="text-sm text-gray-600 mt-1">Experience the spiritual atmosphere of Auroville, the City of Dawn</p>
                   </div>
                   <div>
-                    <p className="font-medium">Winter 2026 - Auroville, India</p>
-                    <p>February 1 - February 28, 2026</p>
-                    <p className="text-sm text-gray-600 mt-1">Experience the spiritual atmosphere of Auroville, the City of Dawn</p>
+                    <p className="font-medium">Spring - Italy</p>
+                    <p>April 7 - April 28</p>
+                    <p className="text-sm text-gray-600 mt-1">Immerse yourself in the beauty and culture of Italy</p>
+                  </div>
+                  <div>
+                    <p className="font-medium">Summer - Andalusia, Spain</p>
+                    <p>August 29 - September 18</p>
+                    <p className="text-sm text-gray-600 mt-1">Practice in the heart of historic Andalusia</p>
                   </div>
                 </div>
               </div>
@@ -290,8 +295,9 @@ export const TeacherTraining = () => {
                       className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-yellow-600 focus:border-yellow-600"
                       required
                     >
-                      <option value="spain-2025">Summer 2025 - Andalusia</option>
-                      <option value="auroville-2025">Winter 2025 - Auroville</option>
+                      <option value="auroville">Winter - Auroville</option>
+                      <option value="italy">Spring - Italy</option>
+                      <option value="spain">Summer - Andalusia</option>
                     </select>
                   </div>
                 

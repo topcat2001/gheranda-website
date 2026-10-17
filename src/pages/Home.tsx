@@ -2,7 +2,7 @@ import React from 'react';
 
 export const Home = () => {
   return (
-    <section className="min-h-[calc(100vh-96px)] pt-8">
+    <section className="pt-8 pb-12">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-start px-4">
         <div>
           <blockquote className="text-2xl md:text-3xl font-serif mb-12 text-yellow-600">
@@ -23,11 +23,9 @@ export const Home = () => {
             <p className="text-xl">
               We offer authentic yoga education including teacher trainings, spiritual tours and yoga retreats in India and around the world. All donations are utilized 100% towards our mission. The majority of our offerings are donation based or free. 
             </p>
-             <p className="text-sm mt-4 text-yellow-600">
-                    As a non-profit organization, we strive to offer all trainings at cost. The amounts listed are suggested donations. 
-                    Please contact us if you are only able to make a partial donation - we want to make our trainings accessible to all 
-                    sincere practitioners.
-                  </p>
+            <p className="text-sm mt-4 text-yellow-600">
+              Note: As a non-profit organization, we strive to offer all trainings at cost.
+            </p>
           </div>
         </div>
 
